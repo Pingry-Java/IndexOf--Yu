@@ -2,7 +2,7 @@
 /**
  * This class represents a program 
  * that demonstrates how the method,
- * "IndexOf" functions. 
+ * "indexOf" functions. 
  * @author Lindsey Yu
  * @version 1
  */
@@ -16,8 +16,8 @@ public class IndexOfExample {
 
     public static void main(String[] args) {
 
-        //IndexOf returns the index (location) of the first occurence of a character in a string or section of a string
-        //IndexOf will always return an integer 
+        //indexOf returns the index (location) of the first occurence of a character in a string or section of a string
+        //indexOf will always return an integer 
 
 
         System.out.println("(1) Character index in a whole string: ");
@@ -47,10 +47,22 @@ public class IndexOfExample {
         System.out.println("String4 = " + string4); 
         System.out.println("The index of 'an' in string4 startin from the 3rd char is : " + string4.indexOf("an", 2));
 
-        System.out.println(); 
+
+        System.out.println();
+
+        System.out.println("If the character or substring cannot be found in the string, the method will return -1.");
+        String stringA = "trumpsucks"; 
+        System.out.println("StringA = " + stringA);
+        System.out.println("The index of 'z' in stringA is: " + stringA.indexOf('z'));
+        System.out.println();
+
+        System.out.println();
+        System.out.println();
+
 
         System.out.println("lastIndexOf has 4 different cases that take in different parameter, they function the same as the indexOf methods, but search backwards from a specified index starting point"); 
  
+        System.out.println();
         
         System.out.println("One example with lastIndexOf, searching for a index of substring in a specified index of a string."); 
 
@@ -58,9 +70,7 @@ public class IndexOfExample {
         System.out.println("String5 = " + string5);    
         System.out.println("The last occurence of 'ali' in string5, searching backward from the 16th char is: " + string5.lastIndexOf("ali", 15)); 
 
-
-         
-
+        
 
 
 
